@@ -75,9 +75,6 @@ docker run -p 8081:8081 contactsphere
 
 🚀 Feel free to contribute by submitting pull requests.
 
-📜 License
-
-🔖 This project is licensed under the MIT License.
 
 📩 Contact
 
