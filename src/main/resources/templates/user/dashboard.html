@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en" th:replace="~{base :: parent(~{::#content},~{::title},~{::script})}">
+<head>
+  <title data-th-text="${loggedInUser.name}+' | Dashboard'">Profile Page</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body class="bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100">
+<div id="content">
+  <!-- Sidebar Section -->
+  <nav th:if="${loggedInUser}" aria-label="Sidebar">
+    <div data-th-replace="~{user/sidebar :: sidebar}"></div>
+  </nav>
+
+  <!-- Main Dashboard Content -->
+  <main class="sm:pl-64 pt-20 min-h-screen flex flex-col items-center">
+    <div class="text-center">
+      <h1 class="text-5xl font-bold mb-4">
+        Welcome, <span data-th-text="${loggedInUser.name}"></span>!
+      </h1>
+      <p class="text-lg text-gray-600">
+        Manage your contacts and explore the features available on your personalized dashboard.
+      </p>
+    </div>
+
+    <!-- Dashboard Stats Section -->
+    <section class="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8">
+      <!-- Total Contacts Box -->
+      <div class="bg-gray-200 dark:bg-gray-800 p-3 rounded-lg shadow-md text-center flex flex-col items-center">
+        <i class="fas fa-address-book text-5xl text-gray-700 dark:text-gray-300 mb-4"></i>
+        <div class="text-6xl font-bold" th:text="${totalContacts}">1000</div>
+        <h2 class="text-2xl mt-4">Contacts</h2>
+        <p class="text-gray-600 dark:text-gray-400">You have these contacts stored in your account</p>
+      </div>
+
+      <!-- Favorite Contacts Box -->
+      <div class="bg-gray-200 dark:bg-gray-800 p-3 rounded-lg shadow-md text-center flex flex-col items-center">
+        <i class="fas fa-star text-5xl text-gray-700 dark:text-yellow-400 mb-4"></i>
+        <div class="text-6xl font-bold text-gray-900 dark:text-gray-100" th:text="${favoriteContacts}">30</div>
+        <h2 class="text-2xl mt-4 text-gray-900 dark:text-gray-100">Favorites</h2>
+        <p class="text-gray-600 dark:text-gray-400">These contacts are your favorites</p>
+      </div>
+    </section>
+
+    <!-- Additional Contacts Box -->
+
+        <a href="/user/contacts" class="inline-block mt-4 px-4 py-2 bg-blue-600 text-white rounded-lg">
+          Go to Contacts
+        </a>
+
+
+    <!-- Add Contacts Button -->
+
+    <a href="/user/contacts/add" class="bg-blue-600 text-white px-6 py-2 rounded-lg shadow-md hover:bg-blue-700 mt-4">
+      Start adding contacts
+    </a>
+  </main>
+</div>
+<script>
+  console.log("This is the dashboard page for " + "${loggedInUser.name}");
+</script>
+</body>
+</html>
