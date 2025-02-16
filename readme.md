@@ -1,4 +1,5 @@
 🌟 ContactSphere 🌟
+
 ContactSphere is a secure and feature-rich contact management system built using Spring Boot. It provides functionalities like email verification, Google authentication, JWT, and OAuth2 security, ensuring a seamless and safe user experience.
 
 🎯 Features
