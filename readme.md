@@ -2,6 +2,7 @@
 
 ContactSphere is a secure and feature-rich contact management system built using Spring Boot. It provides functionalities like email verification, Google authentication, JWT, and OAuth2 security, ensuring a seamless and safe user experience.
 
+
 🎯 Features
 
 ✅ User Authentication: Supports email verification, JWT authentication, and Google OAuth2 login.
@@ -22,6 +23,8 @@ ContactSphere is a secure and feature-rich contact management system built using
 
 ✅ Cloud Storage Integration: Supports storing contacts' profile pictures and other attachments in cloud storage.
 
+
+
 🛠 Technologies Used
 
 🚀 Backend: Java 21, Spring Boot
@@ -34,7 +37,10 @@ ContactSphere is a secure and feature-rich contact management system built using
 
 ☁ Others: Docker, Render for deployment, Cloud Storage APIs - Cloudinary
 
+
 ⚡ Installation & Setup
+
+
 
 📌 Prerequisites
 
@@ -47,6 +53,8 @@ Ensure you have the following installed:
  • 🗄 MySQL or PostgreSQL database
 	
  • 🔗 Git
+
+ 
 📥 Steps to Run the Project
 
 1️⃣ Clone the Repository:
@@ -65,6 +73,8 @@ mvn spring-boot:run
 	• 🌐 API: http://localhost:8081
 	• 📜 Swagger UI : http://localhost:8081/swagger-ui.html
 
+
+
 🔐 Authentication & Security
 
 🛡 Email Verification: Users must verify their email before accessing certain features.
@@ -81,10 +91,14 @@ mvn spring-boot:run
 
 🛡 Activity Logging: Monitors and logs user actions.
 
+
+
 📑 API Documentation
 
 Refer to the Swagger documentation for API details:
 🔗 Swagger UI
+
+
 
 🚀 Deployment
 
@@ -99,9 +113,12 @@ docker run -p 8081:8081 contactsphere
 	• Configure environment variables as required.
 	• Use PostgreSQL as Render does not support MySQL.
 
+
+
 🤝 Contributing
 
 🚀 Feel free to contribute by submitting pull requests.
+
 
 
 📩 Contact
