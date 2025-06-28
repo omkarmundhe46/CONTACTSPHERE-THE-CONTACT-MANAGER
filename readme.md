@@ -39,10 +39,14 @@ ContactSphere is a secure and feature-rich contact management system built using
 📌 Prerequisites
 
 Ensure you have the following installed:
-	• 🖥 Java 21
-	• 🛠 Maven 3.9.9
-	• 🗄 MySQL or PostgreSQL database
-	• 🔗 Git
+	
+ • 🖥 Java 21
+	
+ • 🛠 Maven 3.9.9
+	
+ • 🗄 MySQL or PostgreSQL database
+	
+ • 🔗 Git
 📥 Steps to Run the Project
 
 1️⃣ Clone the Repository:
@@ -64,11 +68,17 @@ mvn spring-boot:run
 🔐 Authentication & Security
 
 🛡 Email Verification: Users must verify their email before accessing certain features.
+
 🛡 JWT Authentication: Used for secure API access.
+
 🛡 OAuth2 Login: Supports Google authentication.
+
 🛡 Two-Factor Authentication (2FA): Enhances account security.
+
 🛡 Password Recovery: Secure email-based password reset.
+
 🛡 Role-Based Access Control (RBAC): Manages user permissions efficiently.
+
 🛡 Activity Logging: Monitors and logs user actions.
 
 📑 API Documentation
