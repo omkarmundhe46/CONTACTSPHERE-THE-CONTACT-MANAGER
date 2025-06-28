@@ -5,13 +5,21 @@ ContactSphere is a secure and feature-rich contact management system built using
 🎯 Features
 
 ✅ User Authentication: Supports email verification, JWT authentication, and Google OAuth2 login.
+
 ✅ Contact Management: Users can add, update, and delete contacts securely.
+
 ✅ Security: Implements robust security mechanisms using Spring Security, JWT, and OAuth2.
+
 ✅ Email Notifications: Sends email verification links and other notifications.
+
 ✅ Role-Based Access Control (RBAC): Ensures different user roles and permissions.
+
 ✅ Two-Factor Authentication (2FA): Provides an extra layer of security.
+
 ✅ Password Reset and Recovery: Securely reset passwords via email.
+
 ✅ Activity Logging: Tracks user actions for monitoring and security purposes.
+
 ✅ Cloud Storage Integration: Supports storing contacts' profile pictures and other attachments in cloud storage.
 
 🛠 Technologies Used
