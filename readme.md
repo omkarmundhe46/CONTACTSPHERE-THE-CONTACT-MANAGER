@@ -25,9 +25,13 @@ ContactSphere is a secure and feature-rich contact management system built using
 🛠 Technologies Used
 
 🚀 Backend: Java 21, Spring Boot
+
 🔒 Security: JWT, OAuth2, Spring Security
+
 🗄 Database: MySQL or PostgreSQL
+
 🛠 Build Tool: Maven 3.9.9
+
 ☁ Others: Docker, Render for deployment, Cloud Storage APIs - Cloudinary
 
 ⚡ Installation & Setup
@@ -44,11 +48,15 @@ Ensure you have the following installed:
 1️⃣ Clone the Repository:
 git clone https://github.com/omkarmundhe46/CONTACTSPHERE-THE-CONTACT-MANAGER.git
 cd CONTACTSPHERE-main
+
 2️⃣ Configure Database:
 	• Create a database in MySQL or PostgreSQL.
-	• Update application.properties or application.yml with your database credentials. 3️⃣ Build and Run the Application:
+	• Update application.properties or application.yml with your database credentials. 
+ 
+ 3️⃣ Build and Run the Application:
 mvn clean install
 mvn spring-boot:run
+
 4️⃣ Access the Application:
 	• 🌐 API: http://localhost:8081
 	• 📜 Swagger UI : http://localhost:8081/swagger-ui.html
@@ -71,8 +79,10 @@ Refer to the Swagger documentation for API details:
 🚀 Deployment
 
 🐳 Docker Setup 
+
 1️⃣ Build the Docker image:
 docker build -t contactsphere .
+
 2️⃣ Run the container:
 docker run -p 8081:8081 contactsphere
 ☁ Deploy on Render
